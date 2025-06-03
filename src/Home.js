@@ -1,14 +1,14 @@
 import React from 'react';
 import './Home.css';
-
+import config from '../config';
 function Home() {
   const handleSpotifyLogin = () => {
-    window.location.href = 'http://localhost:5001/login'; // Replace with actual backend auth route
+    window.location.href = `${config.API_BASE_URL}/auth/login`;
   };
 
   return (
     <div className="home">
-      <h1>🎶 TheCrate</h1>
+      <h1>TheCrate</h1>
       <p>Discover vintage or obscure tracks to sample for your next production.</p>
       <button onClick={handleSpotifyLogin} className="spotify-btn">
         Login with Spotify

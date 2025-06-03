@@ -1,7 +1,7 @@
 // CrateApp.js
 import React, { useState } from 'react';
 import './CrateApp.css';
-
+import config from '../config';
 function CrateApp() {
   const [prompt, setPrompt] = useState('');
   const [era, setEra] = useState('vintage');
@@ -12,7 +12,7 @@ function CrateApp() {
     setLoading(true);
     setResults([]);
     try {
-      const res = await fetch('http://localhost:5001/recommend', {
+      const res = await fetch(`${config.API_BASE_URL}/recommend`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt, era }),

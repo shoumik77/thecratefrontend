@@ -1,9 +1,9 @@
 // src/components/LoginPage.js
 import React from 'react';
-
+import config from '../config';
 const LoginPage = () => {
   const handleLogin = () => {
-    window.location.href = 'http://127.0.0.1:5001/auth/login';
+    window.location.href = `${config.API_BASE_URL}/auth/login`;
   };
 
   return (
