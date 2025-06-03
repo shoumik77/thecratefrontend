@@ -1,38 +1,74 @@
 .App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background: #121212;
+  color: #fff;
+}
+
+input {
+  padding: 0.5rem;
+  width: 300px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 10px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  color: #ccc;
+}
+
+/* Alternative solid button style if needed */
+.button-solid {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #000;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button-solid:hover {
+  background-color: #333;
+}
+
+.results {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.track-card {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 200px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.track-card img {
+  width: 100%;
+  border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.track-card a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.track-card a:hover {
+  color: #ccc;
 }

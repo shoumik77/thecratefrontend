@@ -1,0 +1,26 @@
+.home {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .spotify-btn {
+    background-color: #1db954;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .spotify-btn:hover {
+    background-color: #17a74a;
+  }
+  
+  .note {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1rem;
+  }
+  

@@ -1,0 +1,91 @@
+/* CrateApp.css */
+
+.app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    color: #222;
+    margin-bottom: 1.5rem;
+  }
+  
+  input[type="text"] {
+    padding: 0.6rem;
+    width: 300px;
+    max-width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 0.5rem;
+  }
+  
+  select {
+    padding: 0.6rem;
+    margin-left: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 0.6rem 1.2rem;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  .results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .track-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .track-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .track-card h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0 0.2rem;
+  }
+  
+  .track-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+  }
+  
+  .track-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #1db954;
+    font-weight: bold;
+  }
+  
+  .track-card a:hover {
+    text-decoration: underline;
+  }
+  
